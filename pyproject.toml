@@ -13,9 +13,10 @@ fastapi = "^0.115.6"
 uvicorn = "^0.34.0"
 langgraph = "^0.2.59"
 langchain-google-genai = "^2.0.7"
-poetry-dotenv = "^0.4.0"
 python-dotenv = "^1.0.1"
 typing-extensions = "^4.12.2"
+google-generativeai = "^0.8.3"
+slowapi = "^0.1.9"
 
 
 [build-system]

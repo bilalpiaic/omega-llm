@@ -13,4 +13,11 @@ def read_root():
 def say_hello(name: str):
     return {"message": f"Hello, {name}! Welcome to the FastAPI application."}
 
+# Direct Run the server from play button
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
+
+# or run the server from terminal
+
 #poetry run python -m uvicorn simple_fastapi:app --reload

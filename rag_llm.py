@@ -72,5 +72,10 @@ def get_content(query: str):
         return conversation_state
     except Exception as e:
         return {"output": str(e)}
+    
+# Run the server
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 
 # poetry run python -m uvicorn rag_llm:app --reload

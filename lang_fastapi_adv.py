@@ -242,6 +242,6 @@ async def get_conversations(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 
 # poetry run python lang_fastapi_adv.py

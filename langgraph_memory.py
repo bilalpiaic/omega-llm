@@ -45,6 +45,10 @@ def get_content(query: str):
         return result
     except Exception as e:
         return {"output": str(e)}
+    
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 
 # from typing_extensions import TypedDict
 # from typing import Annotated

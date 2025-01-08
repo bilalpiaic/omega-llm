@@ -20,10 +20,10 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"],  # Allows requests from any origin
+    allow_credentials=True,  # Allows cookies and other credentials to be included in requests
+    allow_methods=["*"],  # Allows all HTTP methods (GET, POST, PUT, DELETE, etc.)
+    allow_headers=["*"],  # Allows all headers in requests
 )
 
 # Initialize Gemini model with LangChain
@@ -130,6 +130,6 @@ async def chat_workflow(message: str):
 # Run the server
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 
 # poetry run python uvicorn lang_fastapi:app --reload

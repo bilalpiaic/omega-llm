@@ -17,6 +17,12 @@ python-dotenv = "^1.0.1"
 typing-extensions = "^4.12.2"
 google-generativeai = "^0.8.3"
 slowapi = "^0.1.9"
+langchain-community = "^0.3.13"
+sqlmodel = "^0.0.22"
+streamlit = "^1.41.1"
+pytest = "^8.3.4"
+psycopg = "^3.2.3"
+psycopg2-binary = "^2.9.10"
 
 
 [build-system]

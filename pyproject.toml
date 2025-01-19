@@ -27,6 +27,9 @@ pymongo = "^4.9.2"
 langgraph-checkpoint="2.0.9"
 langgraph-checkpoint-mongodb="0.1.0"
 langchain-openai = "^0.3.0"
+gradio = "^5.12.0"
+panel = "^1.5.5"
+watchfiles = "^1.0.4"
 
 [build-system]
 requires = ["poetry-core"]

@@ -17,7 +17,7 @@ llm = GoogleGenerativeAI(
 cot_prompt = """
 Solve the following math problem step by step:
 
-Problem: A train leaves Station A at 8:00 AM, traveling at a speed of 60 mph. Another train leaves Station A at 10:00 AM, traveling at a speed of 90 mph in the same direction. At what time will the second train catch up to the first train?
+Problem: A farmer has 10 chickens and 5 cows. If each chicken lays 2 eggs per day and each cow produces 3 liters of milk per day, how many eggs and liters of milk does the farmer get in 7 days?
 
 """
 

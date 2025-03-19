@@ -6,7 +6,7 @@ authors = ["bilalpiaic <omegaai.piaic@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 langchain = "^0.3.12"
 langchain-core = "^0.3.25"
 fastapi = "^0.115.6"
@@ -35,6 +35,39 @@ ipywidgets = "^8.1.5"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
+
+[project]
+name = "omega-llm"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.12",
+    "langchain-core>=0.3.25",
+    "fastapi>=0.115.6",
+    "uvicorn>=0.34.0",
+    "langgraph>=0.2.59",
+    "langchain-google-genai>=2.0.7",
+    "python-dotenv>=1.0.1",
+    "typing-extensions>=4.12.2",
+    "google-generativeai>=0.8.3",
+    "slowapi>=0.1.9",
+    "langchain-community>=0.3.13",
+    "sqlmodel>=0.0.22",
+    "streamlit>=1.41.1",
+    "pytest>=8.3.4",
+    "psycopg>=3.2.3",
+    "psycopg2-binary>=2.9.10",
+    "pymongo>=4.9.2",
+    "langgraph-checkpoint==2.0.9",
+    "langgraph-checkpoint-mongodb==0.1.0",
+    "langchain-openai>=0.3.0",
+    "gradio>=5.12.0",
+    "panel>=1.5.5",
+    "watchfiles>=1.0.4",
+    "trustcall>=0.0.26",
+    "ipywidgets>=8.1.5"
+]
 
 [build-system]
 requires = ["poetry-core"]

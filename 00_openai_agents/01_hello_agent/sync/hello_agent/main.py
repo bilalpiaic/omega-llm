@@ -1,7 +1,16 @@
 import os
+import sys
+import time
 from dotenv import load_dotenv
 from agents import Agent, Runner, AsyncOpenAI, OpenAIChatCompletionsModel
 from agents.run import RunConfig
+
+def typewriter_effect(text, delay=0.005):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()  # New line at the end
 
 # Load the environment variables from the .env file
 load_dotenv()
@@ -31,7 +40,8 @@ config = RunConfig(
 
 agent: Agent = Agent(name="Assistant", instructions="You are a helpful assistant", model=model)
 
-result = Runner.run_sync(agent, "Hello, how are you.", run_config=config)
-
 print("\nCALLING AGENT\n")
-print(result.final_output)
+result = Runner.run_sync(agent, "Hello, how are you. Tell me about AgenticAI future with openai SDK.", run_config=config)
+
+# Print the result with typewriter effect
+typewriter_effect(result.final_output)

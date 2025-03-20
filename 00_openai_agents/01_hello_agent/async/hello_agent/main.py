@@ -38,7 +38,7 @@ async def main():
         model=model
     )
 
-    result = await Runner.run(agent, "Tell me about recursion in programming.", run_config=config)
+    result = await Runner.run(agent, "Tell me about AgenticAI future with openai SDK.", run_config=config)
     print(result.final_output)
     # Function calls itself,
     # Looping in smaller pieces,
